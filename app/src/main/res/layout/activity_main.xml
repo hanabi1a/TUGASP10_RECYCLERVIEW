@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/red">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="16dp"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="National Hero of Indonesia"
+            android:fontFamily="@font/librebaskervilleregular"/>
+
+        <TextView
+            android:id="@+id/title_desc"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:textSize="13dp"
+            android:textColor="@color/white"
+            android:text="Discover the indelible mark left by these extraordinary individuals. Immerse yourself in tales of bravery, explore the profound impact of these heroes, feel the pulse of heroism, celebrate the spirit that shaped our nation and ignite your patriotic spirit."
+            android:fontFamily="@font/librebaskervilleregular"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_hero"
+            tools:listitem="@layout/item_hero"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

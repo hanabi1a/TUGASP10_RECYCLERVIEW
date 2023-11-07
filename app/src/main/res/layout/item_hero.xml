@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="8dp"
+    android:backgroundTint="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivHero"
+            android:layout_width="290dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="8dp"/>
+
+        <TextView
+            android:id="@+id/txt_hero_name"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_below="@id/ivHero"
+            android:text="Hero Name"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/librebaskervilleregular"/>
+
+        <TextView
+            android:id="@+id/txt_hero_desc"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_hero_name"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginHorizontal="8dp"
+            android:text="Hero Description"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/librebaskervilleregular"/>
+
+        <TextView
+            android:id="@+id/txt_hero_julukan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_hero_desc"
+            android:layout_marginStart="10dp"
+            android:layout_marginHorizontal="8dp"
+            android:text="Hero Julukan"
+            android:visibility="invisible"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

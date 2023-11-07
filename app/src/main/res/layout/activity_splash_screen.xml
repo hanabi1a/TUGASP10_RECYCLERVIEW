@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sumpahpemuda"
+    tools:context=".SplashScreen">
+
+</RelativeLayout>
+
+<!--menggunakan relative layout dengan background yang mengambil file dari drawable bernama sumpah pemuda.
+width dan heightnya diatur match parent agar mengikuti atau menutupi seluruh bagian layar-->
